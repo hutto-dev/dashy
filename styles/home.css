@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: arial;
+}
+
+header {
+  text-align: center;
+}
+
+/* GRID LAYOUT */
+
+.main-contain {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: repeat(14, 1fr);
+  min-height: 100vh;
+  gap: 0.6rem;
+  background-color: rgb(224, 225, 238);
+}
+
+.hello-contain,
+.scripture-contain,
+.threebox-contain,
+.todo-habit-contain {
+  background-color: #f9f9f9;
+  margin: 0 16px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 8px;
+}
+
+.hello-contain {
+  grid-row: 1/5;
+}
+.scripture-contain {
+  grid-row: 5/7;
+}
+.threebox-contain {
+  display: flex;
+  justify-content: space-around;
+  grid-row: 7/9;
+}
+
+.todo-habit-contain {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  grid-row: 9/-1;
+}
+
+/* THREE BOX LAYOUT & TODO HABIT LAYOUT*/
+
+.onebox,
+.twobox,
+.threebox {
+  text-align: center;
+  margin: 1rem;
+  width: 30%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 8px;
+}
+.todo-contain,
+.habit-contain {
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 45%;
+  margin: 16px 0;
+
+  border-radius: 8px;
+}
