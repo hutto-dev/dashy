@@ -16,6 +16,7 @@ header {
   grid-template-rows: repeat(14, 1fr);
   min-height: 100vh;
   gap: 0.6rem;
+  padding: 0.6rem 0;
   background-color: rgb(224, 225, 238);
 }
 
