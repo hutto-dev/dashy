@@ -62,11 +62,9 @@ header {
 }
 .todo-contain,
 .habit-contain {
-  text-align: center;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   width: 45%;
   margin: 16px 0;
-
   border-radius: 8px;
 }
 
@@ -117,8 +115,6 @@ header {
   padding: 1rem 1.5rem;
   font-style: italic;
 }
-.verse {
-}
 
 /* THREE BOX STYLES */
 
@@ -146,3 +142,5 @@ header {
 .emoji {
   font-size: 3rem;
 }
+
+/* TO DO LIST */
