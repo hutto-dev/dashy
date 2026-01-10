@@ -70,6 +70,43 @@ header {
   border-radius: 8px;
 }
 
+/* GREETING BOX */
+
+.hello-contain {
+  display: flex;
+}
+
+.pic-contain {
+  display: flex;
+  flex: 1;
+
+  align-items: center;
+  padding: 0 0.5rem;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name-quote-contain {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+
+  justify-content: center;
+}
+
+.greeting {
+  font-size: 2.5rem;
+}
+
+.quote {
+  font-style: italic;
+}
+
 /* Scripture Box */
 .scripture-contain {
   display: flex;
@@ -101,8 +138,6 @@ header {
 }
 
 .description {
-  border-top: 1px solid rgb(177, 185, 189);
-  padding-top: 8px;
   margin: 0 26px;
   font-size: 0.75rem;
   color: rgb(200, 204, 206);
