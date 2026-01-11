@@ -80,7 +80,7 @@ main {
 
 .today-contain h2,
 .tomorrow-contain h2 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin-bottom: 0.5rem;
 }
 
@@ -96,11 +96,13 @@ main {
   align-items: center;
   background-color: #f9f9f9;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  border-radius: 3px;
-  padding: 1.3rem 10px;
+  border-radius: 8px;
+  padding: 1.5rem 10px;
 }
 
 .task-box label {
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 /* probably wrong */
@@ -110,7 +112,7 @@ main {
 }
 
 .priority {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   margin-right: 0.5rem;
 }
 
