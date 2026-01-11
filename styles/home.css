@@ -1,9 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  font-family: "Inter";
-}
-
 header {
   text-align: center;
 }
@@ -131,6 +125,8 @@ header {
 .UV {
   font-size: 2.2rem;
   line-height: 0.92;
+  font-family: "Truculenta";
+  font-weight: bold;
 }
 
 .description {
@@ -143,21 +139,18 @@ header {
   font-size: 3rem;
 }
 
-/* TO DO LIST */
+/* TO DO LIST & HABIT BOXES */
 
-.todo-habit-contain {
-}
-
-.todo-contain {
-}
-
-.todo-contain p {
+.todo-contain h2,
+.habit-contain h2 {
   text-align: center;
   margin-top: 8px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 3px;
 }
+
+/* TO DO LIST */
 
 .todo-list {
   list-style: none;
@@ -169,11 +162,3 @@ header {
 }
 
 /* HABIT */
-
-.habit-contain p {
-  text-align: center;
-  margin-top: 8px;
-  font-size: 1rem;
-  font-weight: bold;
-  letter-spacing: 3px;
-}
