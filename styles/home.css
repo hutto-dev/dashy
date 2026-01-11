@@ -144,3 +144,36 @@ header {
 }
 
 /* TO DO LIST */
+
+.todo-habit-contain {
+}
+
+.todo-contain {
+}
+
+.todo-contain p {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 8px;
+}
+
+.todo-item {
+  margin-bottom: 0.5rem;
+}
+
+/* HABIT */
+
+.habit-contain p {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
