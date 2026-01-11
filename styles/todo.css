@@ -67,3 +67,67 @@ header {
 }
 
 /* MAIN */
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.today-contain,
+.tomorrow-contain {
+  margin: 0.5rem 1rem;
+}
+
+.today-contain h2,
+.tomorrow-contain h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.task-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 3px;
+  padding: 1.3rem 10px;
+}
+
+.task-box label {
+}
+
+/* probably wrong */
+
+.task-box input {
+  margin-right: 0.5rem;
+}
+
+.priority {
+  font-size: 0.7rem;
+  margin-right: 0.5rem;
+}
+
+.low {
+  background-color: rgb(156, 255, 199);
+  padding: 3px 6px;
+  border-radius: 5px;
+}
+
+.medium {
+  background-color: rgb(156, 224, 255);
+  padding: 3px 6px;
+  border-radius: 5px;
+}
+
+.high {
+  background-color: rgb(255, 156, 156);
+  padding: 3px 6px;
+  border-radius: 5px;
+}
