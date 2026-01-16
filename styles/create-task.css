@@ -1,0 +1,36 @@
+header {
+  text-align: center;
+}
+
+/* MAIN SECTION */
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-contain {
+}
+
+.title-contain {
+}
+
+.priority-contain {
+}
+
+/* Buttons */
+
+.create-today-btn {
+}
+
+.priority-high-btn {
+}
+
+.priority-medium-btn {
+}
+
+.priority-low-btn {
+}
+
+.create-btn {
+}

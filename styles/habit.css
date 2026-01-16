@@ -1,0 +1,49 @@
+header {
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.blank {
+  background-color: lightsalmon;
+}
+
+.habit-contain {
+}
+
+.habit-daily-contain {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 16px;
+}
+
+.habit-weekly-contain {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 16px;
+}
+
+.habit-box {
+  display: flex;
+  width: 120px;
+  height: 120px;
+  border: 3px solid black;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.habit-weekly-contain .habit-box {
+  display: flex;
+  width: 90px;
+  height: 90px;
+  border: 3px solid black;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
