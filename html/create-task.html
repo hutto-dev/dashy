@@ -19,17 +19,33 @@
     </header>
     <main>
       <form>
+        <div class="title-contain">
+          <h2>Title</h2>
+          <input
+            type="text"
+            id="task-title"
+            name="task-title"
+            class="task-title"
+          />
+        </div>
         <div class="create-contain">
-          <button class="create-today-btn">Today</button>
-          <button class="create-today-btn">Tomorrow</button>
-          <button class="create-today-btn">C</button>
+          <h2>Date</h2>
+          <div class="btn-contain">
+            <button class="create-today-btn">Today</button>
+            <button class="create-today-btn">Tomorrow</button>
+            <button class="create-today-btn">C</button>
+          </div>
         </div>
-        <div class="title-contain"></div>
+
         <div class="priority-contain">
-          <button class="priority-high-btn">High</button>
-          <button class="priority-medium-btn">Medium</button>
-          <button class="priority-low-btn">Low</button>
+          <h2>Priority</h2>
+          <div class="btn-contain">
+            <button class="priority-btn high">Low</button>
+            <button class="priority-btn medium">Medium</button>
+            <button class="priority-btn low">High</button>
+          </div>
         </div>
+
         <button class="create-btn">Create</button>
       </form>
     </main>

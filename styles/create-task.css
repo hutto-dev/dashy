@@ -1,12 +1,30 @@
 header {
   text-align: center;
+  background-color: rgb(182, 247, 243);
 }
 
 /* MAIN SECTION */
 
-main {
+form {
   display: flex;
   flex-direction: column;
+}
+
+.create-contain,
+.title-contain,
+.priority-contain {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+.btn-contain {
+  display: flex;
+  justify-content: space-around;
 }
 
 .create-contain {
@@ -18,19 +36,40 @@ main {
 .priority-contain {
 }
 
-/* Buttons */
+/* Buttons & Input */
 
 .create-today-btn {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: 1px solid rgb(205, 192, 192);
+  background-color: white;
+  font-weight: 500;
 }
 
-.priority-high-btn {
+.task-title {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgb(205, 192, 192);
 }
 
-.priority-medium-btn {
-}
-
-.priority-low-btn {
+.priority-btn {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: 1px solid rgb(205, 192, 192);
+  background-color: white;
+  font-weight: 500;
 }
 
 .create-btn {
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1.5rem;
+  margin: 1rem;
+  background-color: rgb(0, 175, 167);
+  color: white;
+  font-weight: 500;
 }
