@@ -1,0 +1,55 @@
+header {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  font-size: 1.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 3rem 2rem;
+}
+
+main h2 {
+  margin-bottom: 1rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.email,
+.password {
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.email::placeholder,
+.password::placeholder {
+  font-family: "Inter";
+  font-weight: 500;
+}
+
+.password {
+}
+
+.submit-btn {
+  border: none;
+  background-color: coral;
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+main p {
+  text-align: center;
+}
