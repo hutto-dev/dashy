@@ -29,16 +29,17 @@ h2 {
 
 /* Buttons & Input */
 
-.create-today-btn {
+.daily-habit-btn,
+.weekly-habit-btn {
   font-size: 1rem;
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
   border-radius: 10px;
   border: 1px solid rgb(205, 192, 192);
   background-color: white;
   font-weight: 500;
 }
 
-.task-title {
+.habit-title {
   padding: 1rem;
   border-radius: 10px;
   border: 1px solid rgb(205, 192, 192);
