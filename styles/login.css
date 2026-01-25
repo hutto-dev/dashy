@@ -35,12 +35,9 @@ main h2 {
   font-weight: 500;
 }
 
-.password {
-}
-
 .submit-btn {
   border: none;
-  background-color: coral;
+  background-color: rgb(255, 64, 242);
   border-radius: 5px;
   padding: 1rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
