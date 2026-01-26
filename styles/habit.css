@@ -1,49 +1,47 @@
-header {
-  text-align: center;
+/* HEADER - FROM TODO CSS */
+
+.add-habit-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  border: none;
+  background-color: rgb(130, 80, 255);
+  font-size: 1rem;
+  font-weight: bold;
 }
 
-.main {
+/* MAIN */
+
+main {
   display: flex;
-  flex-direction: column;
+  margin: 1rem;
 }
 
-.blank {
-  background-color: lightsalmon;
+.habit-container {
+  display: flex;
 }
 
-.habit-contain {
+h2 {
+}
+
+.habit-daily-contain,
+.habit-weekly-contain {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
 }
 
 .habit-daily-contain {
-  display: flex;
-  justify-content: space-around;
-  padding: 0 16px;
-}
-
-.habit-weekly-contain {
-  display: flex;
-  justify-content: space-around;
-  padding: 0 16px;
+  margin-bottom: 0.5rem;
 }
 
 .habit-box {
-  display: flex;
-  width: 120px;
-  height: 120px;
-  border: 3px solid black;
-  border-radius: 10px;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-}
-
-.habit-weekly-contain .habit-box {
-  display: flex;
-  width: 90px;
-  height: 90px;
-  border: 3px solid black;
   border-radius: 10px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+  width: 47%;
+  padding: 75px 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: #f9f9f9;
 }
