@@ -32,6 +32,7 @@ header {
   background-color: rgb(130, 80, 255);
   font-size: 1rem;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .calendar-contain {
@@ -84,10 +85,19 @@ main {
   margin-bottom: 0.5rem;
 }
 
-.task-list {
+.task-list-container {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.ul-task {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .task-box {

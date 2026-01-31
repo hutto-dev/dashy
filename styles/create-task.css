@@ -53,7 +53,8 @@ h2 {
   font-weight: 500;
 }
 
-.create-btn {
+.create-btn,
+.back-btn {
   border: none;
   border-radius: 10px;
   font-size: 1.2rem;
@@ -63,4 +64,10 @@ h2 {
   background-color: rgb(130, 80, 255);
   color: white;
   font-weight: 500;
+  cursor: pointer;
+}
+
+.back-btn {
+  background-color: rgb(63, 53, 90);
+  margin-top: 0;
 }

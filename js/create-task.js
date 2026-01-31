@@ -1,5 +1,6 @@
 const taskInput = document.getElementById("task-title");
 const createBtn = document.getElementById("create-btn");
+const backBtn = document.getElementById("back-btn");
 
 createBtn.addEventListener("click", (event) => {
   event.preventDefault();
@@ -8,4 +9,8 @@ createBtn.addEventListener("click", (event) => {
   taskList.push(newTask);
   localStorage.setItem("tasks", JSON.stringify(taskList));
   taskInput.value = "";
+});
+
+backBtn.addEventListener("click", () => {
+  window.location.href = "todo.html";
 });

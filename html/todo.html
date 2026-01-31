@@ -17,7 +17,7 @@
     <header>
       <div class="title-contain">
         <h1>TO-DO LIST</h1>
-        <button class="add-task-btn">+</button>
+        <button class="add-task-btn" id="add-task-btn">+</button>
       </div>
       <div class="calendar-contain">
         <div class="week">
@@ -55,14 +55,16 @@
     <main>
       <div class="today-contain">
         <h2>Today</h2>
-        <div class="task-list">
-          <div class="task-box" id="task-box">
-            <label>
-              <input type="checkbox" />
-              Wash the Dog
-            </label>
-            <p class="priority low">low</p>
-          </div>
+        <div class="task-list-container">
+          <ul class="ul-task" id="ul-task">
+            <li class="task-box" id="task-box">
+              <label>
+                <input type="checkbox" />
+                Wash the Dog
+              </label>
+              <p class="priority low">low</p>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="tomorrow-contain">
