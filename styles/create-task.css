@@ -29,13 +29,18 @@ h2 {
 
 /* Buttons & Input */
 
-.create-today-btn {
+.date-btn {
   font-size: 1rem;
   padding: 1rem 2rem;
   border-radius: 10px;
   border: 1px solid rgb(205, 192, 192);
   background-color: white;
   font-weight: 500;
+}
+
+.date-btn.active {
+  background-color: rgb(0, 255, 149);
+  border: none;
 }
 
 .task-title {

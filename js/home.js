@@ -1,4 +1,4 @@
-////////////////////////////////////////// VERSE OF THE DAY //////////////////////////////////////////
+///////////////////////// VERSE OF THE DAY /////////////////////////
 
 /////// GRABBING DAILY VERSE ///////
 const verseList = [
@@ -19,8 +19,6 @@ const dateNumber =
 
 const todayNumber = dateNumber % verseList.length;
 const randomVerse = verseList[todayNumber];
-
-console.log(todayNumber);
 
 /////// API ///////
 async function fetchVerses(verseId) {
@@ -59,3 +57,15 @@ async function loadVerse() {
 }
 
 loadVerse();
+
+///////////////////////// WEATHER /////////////////////////
+
+///// When creating user sign up, have them put their location so you can fill in the API info ////
+
+async function getWeather() {
+  const apiKey = "3c7e3b8f3df875e9e383580a46681bc3";
+  let zipcode = 25425;
+  const response = await fetch(
+    `http://api.openweathermap.org/geo/1.0/zip?zip=${zipcode},{country code}&appid=${apiKey}`,
+  );
+}
