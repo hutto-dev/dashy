@@ -66,6 +66,11 @@ async function getWeather() {
   const apiKey = "3c7e3b8f3df875e9e383580a46681bc3";
   let zipcode = 25425;
   const response = await fetch(
-    `http://api.openweathermap.org/geo/1.0/zip?zip=${zipcode},{country code}&appid=${apiKey}`,
+    `http://api.openweathermap.org/geo/1.0/zip?zip=${zipcode},US&appid=${apiKey}`,
   );
+
+  const data = await response.json();
+  console.log(data);
 }
+
+getWeather();
