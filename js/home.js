@@ -81,8 +81,6 @@ async function getWeather() {
 
   const dataWeather = await responseWeather.json();
 
-  console.log(dataWeather);
-
   return {
     currentTemp: dataWeather.current.temp,
     currentUV: dataWeather.current.uvi,
