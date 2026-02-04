@@ -62,15 +62,49 @@ loadVerse();
 
 ///// When creating user sign up, have them put their location so you can fill in the API info ////
 
+///////// API /////////
+
 async function getWeather() {
   const apiKey = "3c7e3b8f3df875e9e383580a46681bc3";
   let zipcode = 25425;
-  const response = await fetch(
+  const responseZipcode = await fetch(
     `http://api.openweathermap.org/geo/1.0/zip?zip=${zipcode},US&appid=${apiKey}`,
   );
 
-  const data = await response.json();
-  console.log(data);
+  const dataZipcode = await responseZipcode.json();
+  const lat = dataZipcode.lat;
+  const lon = dataZipcode.lon;
+
+  const responseWeather = await fetch(
+    `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`,
+  );
+
+  const dataWeather = await responseWeather.json();
+
+  console.log(dataWeather);
+
+  return {
+    currentTemp: dataWeather.current.temp,
+    currentUV: dataWeather.current.uvi,
+  };
 }
 
 getWeather();
+
+///////// UPDATE TEMP & UV /////////
+
+function updateWeather({ currentTemp, currentUV }) {
+  const temp = document.getElementById("temp");
+  const uv = document.getElementById("uv");
+
+  temp.textContent = `${Math.floor(currentTemp)}°`;
+  uv.textContent = `${currentUV}`;
+}
+
+///////// TYING IT TOGETHER /////////
+async function loadWeather() {
+  const data = await getWeather();
+  updateWeather(data);
+}
+
+loadWeather();
