@@ -11,13 +11,14 @@ const taskArray = JSON.parse(localStorage.getItem("tasks"));
 
 //// DISPLAY TASKS /////
 
-const taskList = document.getElementById("ul-task");
+const todayList = document.getElementById("today-task");
+const tomorrowList = document.getElementById("tomorrow-task");
 
 for (i = 0; i < taskArray.length; i++) {
   const li = document.createElement("li");
   li.classList.add("task-box");
   li.textContent = taskArray[i];
-  taskList.appendChild(li);
+  todayList.appendChild(li);
 
   console.log(taskArray[i]);
   console.log(li);

@@ -2,9 +2,18 @@ const taskInput = document.getElementById("task-title");
 const createBtn = document.getElementById("create-btn");
 const backBtn = document.getElementById("back-btn");
 
+let selectedDay = null;
+
 createBtn.addEventListener("click", (event) => {
   event.preventDefault();
-  const newTask = taskInput.value;
+  if (!selectedDay) {
+    alert("Please choose a day");
+    return;
+  }
+  const newTask = {
+    title: taskInput.value,
+    day: selectedDay,
+  };
   const taskList = JSON.parse(localStorage.getItem("tasks")) || [];
   taskList.push(newTask);
   localStorage.setItem("tasks", JSON.stringify(taskList));
@@ -24,29 +33,14 @@ const calendarButton = document.getElementById("create-calendar-btn");
 
 todayButton.addEventListener("click", (event) => {
   event.preventDefault();
-  todayButton.classList.toggle("active");
+  todayButton.classList.add("active");
+  tomorrowButton.classList.remove("active");
+  selectedDay = "today";
 });
 
 tomorrowButton.addEventListener("click", (event) => {
   event.preventDefault();
   tomorrowButton.classList.toggle("active");
+  todayButton.classList.remove("active");
+  selectedDay = "tomorrow";
 });
-
-//////// BEST PRACTICE /////////
-
-// const container = document.querySelector(".date-options");
-
-// container.addEventListener("click", (event) => {
-//   const clickedButton = event.target.closest(".date-btn");
-//   if (!clickedButton) return;
-
-//   container.querySelectorAll(".date-btn").forEach((button) => {
-//     button.classList.remove("active");
-//   });
-
-//   clickedButton.classList.add("active");
-
-//   // best practice: store the selected value
-//   const selectedOption = clickedButton.dataset.option;
-//   console.log(selectedOption);
-// });
