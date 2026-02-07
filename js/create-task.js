@@ -2,14 +2,34 @@ const taskInput = document.getElementById("task-title");
 const createBtn = document.getElementById("create-btn");
 const backBtn = document.getElementById("back-btn");
 
+//// TOAST ////
+function showToast() {
+  const toast = document.getElementById("toast");
+
+  toast.classList.add("show");
+
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 2000);
+}
+
+//// APP STATE ////
 let selectedDay = null;
+
+//// CREATE TASK ////
 
 createBtn.addEventListener("click", (event) => {
   event.preventDefault();
+
+  if (!taskInput.value.trim()) {
+    alert("Please enter a task");
+    return;
+  }
   if (!selectedDay) {
     alert("Please choose a day");
     return;
   }
+
   const newTask = {
     title: taskInput.value,
     day: selectedDay,
@@ -19,7 +39,7 @@ createBtn.addEventListener("click", (event) => {
   localStorage.setItem("tasks", JSON.stringify(taskList));
   taskInput.value = "";
 
-  // Create little pop up window "task added!" when clicked
+  showToast();
 });
 
 backBtn.addEventListener("click", () => {
@@ -40,7 +60,7 @@ todayButton.addEventListener("click", (event) => {
 
 tomorrowButton.addEventListener("click", (event) => {
   event.preventDefault();
-  tomorrowButton.classList.toggle("active");
+  tomorrowButton.classList.add("active");
   todayButton.classList.remove("active");
   selectedDay = "tomorrow";
 });
