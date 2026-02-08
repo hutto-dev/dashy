@@ -1,3 +1,6 @@
+//// LOAD TASKS FROM STORAGE ////
+const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
 //// ADDING TASK BUTTON ////
 
 const addTaskBtn = document.getElementById("add-task-btn");
@@ -7,20 +10,29 @@ addTaskBtn.addEventListener("click", () => {
 });
 
 //// GETTING TASKS /////
-const taskArray = JSON.parse(localStorage.getItem("tasks"));
 
 //// DISPLAY TASKS /////
 
 const todayList = document.getElementById("today-task");
 const tomorrowList = document.getElementById("tomorrow-task");
 
-for (i = 0; i < taskArray.length; i++) {
+for (let i = 0; i < tasks.length; i++) {
   const li = document.createElement("li");
   li.classList.add("task-box");
-  li.textContent = taskArray[i];
-  todayList.appendChild(li);
+  li.innerHTML = `
+    <label>
+      <input type='checkbox' />
+      ${tasks.title}
+    </label>
+  `;
 
-  console.log(taskArray[i]);
+  if (tasks.day === "today") {
+    todayList.appendChild(li);
+  } else if (tasks.day === "tomorrow") {
+    tomorrowList.appendChild(li);
+  }
+
+  console.log(tasks[i]);
   console.log(li);
 }
 

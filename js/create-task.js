@@ -42,6 +42,8 @@ createBtn.addEventListener("click", (event) => {
   showToast();
 });
 
+//// BACK BUTTON ////
+
 backBtn.addEventListener("click", () => {
   window.location.href = "todo.html";
 });
