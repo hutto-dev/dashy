@@ -22,13 +22,13 @@ for (let i = 0; i < tasks.length; i++) {
   li.innerHTML = `
     <label>
       <input type='checkbox' />
-      ${tasks.title}
+      ${tasks[i].title}
     </label>
   `;
 
-  if (tasks.day === "today") {
+  if (tasks[i].day === "today") {
     todayList.appendChild(li);
-  } else if (tasks.day === "tomorrow") {
+  } else if (tasks[i].day === "tomorrow") {
     tomorrowList.appendChild(li);
   }
 
