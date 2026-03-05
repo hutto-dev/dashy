@@ -74,13 +74,11 @@ main {
   flex-direction: column;
 }
 
-.today-contain,
-.tomorrow-contain {
+.task-contain {
   margin: 0.5rem 1rem;
 }
 
-.today-contain h2,
-.tomorrow-contain h2 {
+.task-contain h2 {
   font-size: 1.7rem;
   margin-bottom: 0.5rem;
 }

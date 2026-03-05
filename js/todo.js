@@ -13,8 +13,7 @@ addTaskBtn.addEventListener("click", () => {
 
 //// DISPLAY TASKS /////
 
-const todayList = document.getElementById("today-task");
-const tomorrowList = document.getElementById("tomorrow-task");
+const taskList = document.getElementById("task-list");
 
 for (let i = 0; i < tasks.length; i++) {
   const li = document.createElement("li");
@@ -26,11 +25,7 @@ for (let i = 0; i < tasks.length; i++) {
     </label>
   `;
 
-  if (tasks[i].day === "today") {
-    todayList.appendChild(li);
-  } else if (tasks[i].day === "tomorrow") {
-    tomorrowList.appendChild(li);
-  }
+  taskList.appendChild(li);
 
   console.log(tasks[i]);
   console.log(li);
