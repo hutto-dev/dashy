@@ -15,12 +15,17 @@
   </head>
   <body>
     <header>
-      <div class="title-contain">
-        <h1>TO-DO LIST</h1>
-        <button class="add-task-btn" id="add-task-btn">+</button>
+      <div class="header-shape">
+        <button class="arrow-btn" id="arrow-btn">←</button>
       </div>
     </header>
     <main>
+      <section class="title-contain">
+        <div class="emoji">
+          <img src="../images/notebook.svg" alt="notebook" class="notebook" />
+        </div>
+        <div class="title"><h1>To-Do List</h1></div>
+      </section>
       <section class="task-contain">
         <h2>Tasks</h2>
         <div class="task-list-container">
@@ -28,6 +33,7 @@
         </div>
       </section>
     </main>
+    <footer><button class="add-task-btn" id="add-task-btn">+</button></footer>
     <script src="../js/todo.js"></script>
   </body>
 </html>
