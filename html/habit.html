@@ -10,11 +10,69 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../styles/global.css" />
-    <link rel="stylesheet" href="../styles/todo.css" />
     <link rel="stylesheet" href="../styles/habit.css" />
     <title>HABIT TRACKER || Dashy</title>
   </head>
   <body>
+    <header>
+      <h1>Title</h1>
+      <p>Date</p>
+    </header>
+    <main>
+      <section class="progress-section">
+        <div class="progress-cirlce">circle</div>
+        <div class="lvl-info">level info</div>
+      </section>
+      <section class="box-section">
+        <div class="streak-box">streak</div>
+        <div class="perfect-box">perfect</div>
+        <div class="badge-box">badge</div>
+      </section>
+      <section class="habit-section">
+        <p>TODAY'S HABITS</p>
+        <div class="habit-box">
+          <input type="checkbox" id="habit" class="checkbox" />
+          <label for="habit" class="habit-label">Read 30 Minutes</label>
+        </div>
+      </section>
+    </main>
     <script src="../js/habit.js"></script>
   </body>
 </html>
+
+<!-- 
+
+Dashboard
+
+- Profile Card
+	- Name
+	- Picture
+	- Quote
+
+
+- Scripture of the Day
+
+
+- Habit XP tracker
+	- Main page
+	- Create habit
+	- Progress bar
+	- "Perfect Day"
+	- Animanted cirle when complete
+- Each task gives XP
+- Completing all daily tasks = "Perfect Day" badge
+- Streak counter (localStorage)
+- Progress bar that fills up
+- Confetti animation when all tasks are done
+- Animated progress ring (CSS + SVG)
+- Sound effect on completion
+
+
+- To Do List
+	- Main page
+	- Create Task
+
+
+- Media Queries
+- Light & Dark mode
+- User login -->

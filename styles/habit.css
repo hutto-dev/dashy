@@ -1,0 +1,67 @@
+header {
+  display: flex;
+  background-color: rgb(56, 56, 157);
+}
+
+/* PROGRESS SECTION */
+.progress-section {
+  display: flex;
+  background-color: rgb(85, 85, 184);
+  justify-content: space-around;
+}
+
+.progress-circle {
+}
+
+.lvl-info {
+}
+
+/* BOXES SECTION */
+.box-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+  text-align: center;
+  background-color: rgb(115, 115, 213);
+}
+
+.streak-box,
+.perfect-box {
+  border: 1px solid black;
+  grid-column: 1 / 2;
+  padding: 3rem 3rem;
+  border-radius: 15px;
+}
+
+.streak-box {
+  grid-column: 1 / 2;
+}
+
+.perfect-box {
+  grid-column: 2 / -1;
+}
+
+.badge-box {
+  border: 1px solid black;
+  grid-column: 1 / -1;
+}
+
+/* HABIT SECTION */
+.habit-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.habit-section p {
+  letter-spacing: 5px;
+}
+
+.habit-box {
+}
+
+.checkbox {
+}
+
+.habit-label {
+}
